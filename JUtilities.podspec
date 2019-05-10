@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "JUtilities"
-  s.version      = "1.0"
+  s.version      = "1.1"
   s.summary      = "iOS Utilities"
 
   # This description is used to generate tags and improve search results.
@@ -136,18 +136,18 @@ Pod::Spec.new do |s|
   # s.dependency "JSONKit", "~> 1.4"
 
   s.subspec 'Runtime' do |ss|
-    ss.source_files = 'JUtilities/Runtime/**/*.{h,m}'
-    ss.public_header_files = 'JUtilities/Runtime/**/*.h'
+    ss.source_files = 'JUtilities/Runtime/*.{h,m}'
+    ss.public_header_files = 'JUtilities/Runtime/*.h'
   end
 
   s.subspec 'Foundation' do |ss|
-    ss.source_files = 'JUtilities/Foundation/**/*.{h,m}'
-    ss.public_header_files = 'JUtilities/Foundation/**/*.h'
+    ss.source_files = 'JUtilities/Foundation/*.{h,m}'
+    ss.public_header_files = 'JUtilities/Foundation/*.h'
   end
 
   s.subspec 'UIKit' do |ss|
-    ss.source_files = 'JUtilities/UIKit/**/*.{h,m}'
-    ss.public_header_files = 'JUtilities/UIKit/**/*.h'
+    ss.source_files = 'JUtilities/UIKit/*.{h,m}'
+    ss.public_header_files = 'JUtilities/UIKit/*.h'
 
     ss.subspec 'UIResponderRouter' do |sss|
       sss.source_files = 'JUtilities/UIKit/UIResponderRouter/*.{h,m}'
