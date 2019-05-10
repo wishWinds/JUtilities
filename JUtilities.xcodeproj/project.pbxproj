@@ -7,8 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FEB289842285B37F00C91F57 /* JUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = FEB289832285B37F00C91F57 /* JUtilities.m */; };
-		FEB289852285B37F00C91F57 /* JUtilities.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = FEB289822285B37F00C91F57 /* JUtilities.h */; };
+		36C297A1BE977CE8C8F9F5C6 /* Pods_JUtilitiesDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 087FB19A41540DCBA839767C /* Pods_JUtilitiesDemo.framework */; };
+		FEB289932285B39200C91F57 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FEB289922285B39200C91F57 /* AppDelegate.m */; };
+		FEB289962285B39200C91F57 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEB289952285B39200C91F57 /* ViewController.m */; };
+		FEB289992285B39200C91F57 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEB289972285B39200C91F57 /* Main.storyboard */; };
+		FEB2899B2285B39200C91F57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEB2899A2285B39200C91F57 /* Assets.xcassets */; };
+		FEB2899E2285B39200C91F57 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEB2899C2285B39200C91F57 /* LaunchScreen.storyboard */; };
+		FEB289A12285B39200C91F57 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FEB289A02285B39200C91F57 /* main.m */; };
+		FEB289BA2285B67100C91F57 /* NSArray+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = FEB289AB2285B67100C91F57 /* NSArray+Utilities.m */; };
+		FEB289BB2285B67100C91F57 /* NSMutableArray+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = FEB289AC2285B67100C91F57 /* NSMutableArray+Utilities.m */; };
+		FEB289BC2285B67100C91F57 /* NSDate+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = FEB289AD2285B67100C91F57 /* NSDate+Utilities.m */; };
+		FEB289BE2285B67100C91F57 /* NSObject+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = FEB289B02285B67100C91F57 /* NSObject+Utilities.m */; };
+		FEB289BF2285B67100C91F57 /* NSDictionary+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = FEB289B12285B67100C91F57 /* NSDictionary+Utilities.m */; };
+		FEB289C02285B67100C91F57 /* NSData+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = FEB289B32285B67100C91F57 /* NSData+Utilities.m */; };
+		FEB289C62285B83E00C91F57 /* NSString+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = FEB289C42285B83E00C91F57 /* NSString+Utilities.m */; };
+		FEB289CD2285BF6000C91F57 /* UIResponder+Router.m in Sources */ = {isa = PBXBuildFile; fileRef = FEB289CC2285BF6000C91F57 /* UIResponder+Router.m */; };
+		FEB289D02285C07200C91F57 /* UIView+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = FEB289CF2285C07200C91F57 /* UIView+Utilities.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -18,16 +32,52 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				FEB289852285B37F00C91F57 /* JUtilities.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		087FB19A41540DCBA839767C /* Pods_JUtilitiesDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JUtilitiesDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFBC5A5AA90A7B1A2F13B048 /* Pods-JUtilitiesDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JUtilitiesDemo.debug.xcconfig"; path = "Target Support Files/Pods-JUtilitiesDemo/Pods-JUtilitiesDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		D32EAEF9CF0775B3C9D0A4F6 /* Pods-JUtilitiesDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JUtilitiesDemo.release.xcconfig"; path = "Target Support Files/Pods-JUtilitiesDemo/Pods-JUtilitiesDemo.release.xcconfig"; sourceTree = "<group>"; };
 		FEB2897F2285B37F00C91F57 /* libJUtilities.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libJUtilities.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		FEB289822285B37F00C91F57 /* JUtilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JUtilities.h; sourceTree = "<group>"; };
-		FEB289832285B37F00C91F57 /* JUtilities.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JUtilities.m; sourceTree = "<group>"; };
+		FEB2898F2285B39200C91F57 /* JUtilitiesDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JUtilitiesDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEB289912285B39200C91F57 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FEB289922285B39200C91F57 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FEB289942285B39200C91F57 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		FEB289952285B39200C91F57 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FEB289982285B39200C91F57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FEB2899A2285B39200C91F57 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FEB2899D2285B39200C91F57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FEB2899F2285B39200C91F57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FEB289A02285B39200C91F57 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FEB289A52285B4CE00C91F57 /* JUtilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JUtilities.h; sourceTree = "<group>"; };
+		FEB289A72285B67100C91F57 /* weakify.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = weakify.h; sourceTree = "<group>"; };
+		FEB289A82285B67100C91F57 /* AssociatedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssociatedObject.h; sourceTree = "<group>"; };
+		FEB289AB2285B67100C91F57 /* NSArray+Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Utilities.m"; sourceTree = "<group>"; };
+		FEB289AC2285B67100C91F57 /* NSMutableArray+Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Utilities.m"; sourceTree = "<group>"; };
+		FEB289AD2285B67100C91F57 /* NSDate+Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Utilities.m"; sourceTree = "<group>"; };
+		FEB289AF2285B67100C91F57 /* NSData+Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Utilities.h"; sourceTree = "<group>"; };
+		FEB289B02285B67100C91F57 /* NSObject+Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Utilities.m"; sourceTree = "<group>"; };
+		FEB289B12285B67100C91F57 /* NSDictionary+Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Utilities.m"; sourceTree = "<group>"; };
+		FEB289B22285B67100C91F57 /* NSArray+Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Utilities.h"; sourceTree = "<group>"; };
+		FEB289B32285B67100C91F57 /* NSData+Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Utilities.m"; sourceTree = "<group>"; };
+		FEB289B52285B67100C91F57 /* NSDate+Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Utilities.h"; sourceTree = "<group>"; };
+		FEB289B62285B67100C91F57 /* NSFileManagerFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSFileManagerFunctions.h; sourceTree = "<group>"; };
+		FEB289B72285B67100C91F57 /* NSMutableArray+Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Utilities.h"; sourceTree = "<group>"; };
+		FEB289B82285B67100C91F57 /* NSDictionary+Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Utilities.h"; sourceTree = "<group>"; };
+		FEB289B92285B67100C91F57 /* NSObject+Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Utilities.h"; sourceTree = "<group>"; };
+		FEB289C42285B83E00C91F57 /* NSString+Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Utilities.m"; sourceTree = "<group>"; };
+		FEB289C52285B83E00C91F57 /* NSString+Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Utilities.h"; sourceTree = "<group>"; };
+		FEB289C72285BAFF00C91F57 /* FoundationUtilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FoundationUtilities.h; sourceTree = "<group>"; };
+		FEB289C82285BBCA00C91F57 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		FEB289C92285BDB100C91F57 /* RuntimeUtilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RuntimeUtilities.h; sourceTree = "<group>"; };
+		FEB289CB2285BF6000C91F57 /* UIResponder+Router.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIResponder+Router.h"; sourceTree = "<group>"; };
+		FEB289CC2285BF6000C91F57 /* UIResponder+Router.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+Router.m"; sourceTree = "<group>"; };
+		FEB289CE2285C07200C91F57 /* UIView+Utilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Utilities.h"; sourceTree = "<group>"; };
+		FEB289CF2285C07200C91F57 /* UIView+Utilities.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Utilities.m"; sourceTree = "<group>"; };
+		FEB289D12285C0BD00C91F57 /* UIUtilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIUtilities.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,14 +88,42 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FEB2898C2285B39200C91F57 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36C297A1BE977CE8C8F9F5C6 /* Pods_JUtilitiesDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		236DC6BB2FC5C84E4236549E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AFBC5A5AA90A7B1A2F13B048 /* Pods-JUtilitiesDemo.debug.xcconfig */,
+				D32EAEF9CF0775B3C9D0A4F6 /* Pods-JUtilitiesDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		5D4483A0F1D079BCB5151D7A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				087FB19A41540DCBA839767C /* Pods_JUtilitiesDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FEB289762285B37F00C91F57 = {
 			isa = PBXGroup;
 			children = (
 				FEB289812285B37F00C91F57 /* JUtilities */,
+				FEB289902285B39200C91F57 /* JUtilitiesDemo */,
 				FEB289802285B37F00C91F57 /* Products */,
+				236DC6BB2FC5C84E4236549E /* Pods */,
+				5D4483A0F1D079BCB5151D7A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -53,6 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				FEB2897F2285B37F00C91F57 /* libJUtilities.a */,
+				FEB2898F2285B39200C91F57 /* JUtilitiesDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,10 +139,82 @@
 		FEB289812285B37F00C91F57 /* JUtilities */ = {
 			isa = PBXGroup;
 			children = (
-				FEB289822285B37F00C91F57 /* JUtilities.h */,
-				FEB289832285B37F00C91F57 /* JUtilities.m */,
+				FEB289AA2285B67100C91F57 /* Foundation */,
+				FEB289A62285B67100C91F57 /* Runtime */,
+				FEB289A92285B67100C91F57 /* UIKit */,
+				FEB289A52285B4CE00C91F57 /* JUtilities.h */,
 			);
 			path = JUtilities;
+			sourceTree = "<group>";
+		};
+		FEB289902285B39200C91F57 /* JUtilitiesDemo */ = {
+			isa = PBXGroup;
+			children = (
+				FEB289912285B39200C91F57 /* AppDelegate.h */,
+				FEB289922285B39200C91F57 /* AppDelegate.m */,
+				FEB289942285B39200C91F57 /* ViewController.h */,
+				FEB289952285B39200C91F57 /* ViewController.m */,
+				FEB289972285B39200C91F57 /* Main.storyboard */,
+				FEB2899A2285B39200C91F57 /* Assets.xcassets */,
+				FEB2899C2285B39200C91F57 /* LaunchScreen.storyboard */,
+				FEB2899F2285B39200C91F57 /* Info.plist */,
+				FEB289A02285B39200C91F57 /* main.m */,
+				FEB289C82285BBCA00C91F57 /* PrefixHeader.pch */,
+			);
+			path = JUtilitiesDemo;
+			sourceTree = "<group>";
+		};
+		FEB289A62285B67100C91F57 /* Runtime */ = {
+			isa = PBXGroup;
+			children = (
+				FEB289A72285B67100C91F57 /* weakify.h */,
+				FEB289A82285B67100C91F57 /* AssociatedObject.h */,
+				FEB289C92285BDB100C91F57 /* RuntimeUtilities.h */,
+			);
+			path = Runtime;
+			sourceTree = "<group>";
+		};
+		FEB289A92285B67100C91F57 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				FEB289CA2285BF5200C91F57 /* UIResponderRouter */,
+				FEB289CE2285C07200C91F57 /* UIView+Utilities.h */,
+				FEB289CF2285C07200C91F57 /* UIView+Utilities.m */,
+				FEB289D12285C0BD00C91F57 /* UIUtilities.h */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		FEB289AA2285B67100C91F57 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				FEB289C72285BAFF00C91F57 /* FoundationUtilities.h */,
+				FEB289B62285B67100C91F57 /* NSFileManagerFunctions.h */,
+				FEB289C52285B83E00C91F57 /* NSString+Utilities.h */,
+				FEB289C42285B83E00C91F57 /* NSString+Utilities.m */,
+				FEB289B22285B67100C91F57 /* NSArray+Utilities.h */,
+				FEB289AB2285B67100C91F57 /* NSArray+Utilities.m */,
+				FEB289B72285B67100C91F57 /* NSMutableArray+Utilities.h */,
+				FEB289AC2285B67100C91F57 /* NSMutableArray+Utilities.m */,
+				FEB289AF2285B67100C91F57 /* NSData+Utilities.h */,
+				FEB289AD2285B67100C91F57 /* NSDate+Utilities.m */,
+				FEB289B92285B67100C91F57 /* NSObject+Utilities.h */,
+				FEB289B02285B67100C91F57 /* NSObject+Utilities.m */,
+				FEB289B82285B67100C91F57 /* NSDictionary+Utilities.h */,
+				FEB289B12285B67100C91F57 /* NSDictionary+Utilities.m */,
+				FEB289B52285B67100C91F57 /* NSDate+Utilities.h */,
+				FEB289B32285B67100C91F57 /* NSData+Utilities.m */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		FEB289CA2285BF5200C91F57 /* UIResponderRouter */ = {
+			isa = PBXGroup;
+			children = (
+				FEB289CB2285BF6000C91F57 /* UIResponder+Router.h */,
+				FEB289CC2285BF6000C91F57 /* UIResponder+Router.m */,
+			);
+			path = UIResponderRouter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,6 +237,25 @@
 			productReference = FEB2897F2285B37F00C91F57 /* libJUtilities.a */;
 			productType = "com.apple.product-type.library.static";
 		};
+		FEB2898E2285B39200C91F57 /* JUtilitiesDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FEB289A22285B39200C91F57 /* Build configuration list for PBXNativeTarget "JUtilitiesDemo" */;
+			buildPhases = (
+				A0943BD708B5D8459B4E357F /* [CP] Check Pods Manifest.lock */,
+				FEB2898B2285B39200C91F57 /* Sources */,
+				FEB2898C2285B39200C91F57 /* Frameworks */,
+				FEB2898D2285B39200C91F57 /* Resources */,
+				42597867DF343C75C886865C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JUtilitiesDemo;
+			productName = JUtilitiesDemo;
+			productReference = FEB2898F2285B39200C91F57 /* JUtilitiesDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -98,6 +268,9 @@
 					FEB2897E2285B37F00C91F57 = {
 						CreatedOnToolsVersion = 10.2.1;
 					};
+					FEB2898E2285B39200C91F57 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
 				};
 			};
 			buildConfigurationList = FEB2897A2285B37F00C91F57 /* Build configuration list for PBXProject "JUtilities" */;
@@ -106,6 +279,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = FEB289762285B37F00C91F57;
 			productRefGroup = FEB289802285B37F00C91F57 /* Products */;
@@ -113,20 +287,118 @@
 			projectRoot = "";
 			targets = (
 				FEB2897E2285B37F00C91F57 /* JUtilities */,
+				FEB2898E2285B39200C91F57 /* JUtilitiesDemo */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FEB2898D2285B39200C91F57 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEB2899E2285B39200C91F57 /* LaunchScreen.storyboard in Resources */,
+				FEB2899B2285B39200C91F57 /* Assets.xcassets in Resources */,
+				FEB289992285B39200C91F57 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		42597867DF343C75C886865C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JUtilitiesDemo/Pods-JUtilitiesDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/JUtilities/JUtilities.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JUtilities.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JUtilitiesDemo/Pods-JUtilitiesDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A0943BD708B5D8459B4E357F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JUtilitiesDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FEB2897B2285B37F00C91F57 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FEB289842285B37F00C91F57 /* JUtilities.m in Sources */,
+				FEB289BB2285B67100C91F57 /* NSMutableArray+Utilities.m in Sources */,
+				FEB289BC2285B67100C91F57 /* NSDate+Utilities.m in Sources */,
+				FEB289BF2285B67100C91F57 /* NSDictionary+Utilities.m in Sources */,
+				FEB289CD2285BF6000C91F57 /* UIResponder+Router.m in Sources */,
+				FEB289BE2285B67100C91F57 /* NSObject+Utilities.m in Sources */,
+				FEB289C02285B67100C91F57 /* NSData+Utilities.m in Sources */,
+				FEB289C62285B83E00C91F57 /* NSString+Utilities.m in Sources */,
+				FEB289D02285C07200C91F57 /* UIView+Utilities.m in Sources */,
+				FEB289BA2285B67100C91F57 /* NSArray+Utilities.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEB2898B2285B39200C91F57 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEB289962285B39200C91F57 /* ViewController.m in Sources */,
+				FEB289A12285B39200C91F57 /* main.m in Sources */,
+				FEB289932285B39200C91F57 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FEB289972285B39200C91F57 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FEB289982285B39200C91F57 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FEB2899C2285B39200C91F57 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FEB2899D2285B39200C91F57 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		FEB289862285B37F00C91F57 /* Debug */ = {
@@ -265,6 +537,44 @@
 			};
 			name = Release;
 		};
+		FEB289A32285B39200C91F57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AFBC5A5AA90A7B1A2F13B048 /* Pods-JUtilitiesDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TAXNVNJP42;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/JUtilitiesDemo/PrefixHeader.pch";
+				INFOPLIST_FILE = JUtilitiesDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shupeng.JUtilitiesDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FEB289A42285B39200C91F57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D32EAEF9CF0775B3C9D0A4F6 /* Pods-JUtilitiesDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TAXNVNJP42;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/JUtilitiesDemo/PrefixHeader.pch";
+				INFOPLIST_FILE = JUtilitiesDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shupeng.JUtilitiesDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -282,6 +592,15 @@
 			buildConfigurations = (
 				FEB289892285B37F00C91F57 /* Debug */,
 				FEB2898A2285B37F00C91F57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FEB289A22285B39200C91F57 /* Build configuration list for PBXNativeTarget "JUtilitiesDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEB289A32285B39200C91F57 /* Debug */,
+				FEB289A42285B39200C91F57 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

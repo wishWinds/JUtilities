@@ -1,0 +1,24 @@
+PODS:
+  - JUtilities (0.0.1):
+    - JUtilities/Foundation (= 0.0.1)
+    - JUtilities/Runtime (= 0.0.1)
+    - JUtilities/UIKit (= 0.0.1)
+  - JUtilities/Foundation (0.0.1)
+  - JUtilities/Runtime (0.0.1)
+  - JUtilities/UIKit (0.0.1):
+    - JUtilities/UIKit/UIResponderRouter (= 0.0.1)
+  - JUtilities/UIKit/UIResponderRouter (0.0.1)
+
+DEPENDENCIES:
+  - JUtilities (from `./`)
+
+EXTERNAL SOURCES:
+  JUtilities:
+    :path: "./"
+
+SPEC CHECKSUMS:
+  JUtilities: 243a8dd9bfee0120ccda3b51af4521551fce8fb8
+
+PODFILE CHECKSUM: 74289aa93f69fd0fb0f809561395915788751e3d
+
+COCOAPODS: 1.6.1

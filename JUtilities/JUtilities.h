@@ -6,8 +6,10 @@
 //  Copyright © 2019 shupeng. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#ifndef JUtilities_h
+#define JUtilities_h
 
-@interface JUtilities : NSObject
-
-@end
+#import "RuntimeUtilities.h"
+#import "FoundationUtilities.h"
+#import "UIUtilities.h"
+#endif /* JUtilities_h */
