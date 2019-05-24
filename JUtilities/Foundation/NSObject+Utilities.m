@@ -33,28 +33,6 @@
     return [NSString stringWithUTF8String:class_getName([self class])];
 }
 
-- (id)deepCopy {
-    id obj = nil;
-    @try {
-        obj = [NSKeyedUnarchiver unarchiveObjectWithData:[NSKeyedArchiver archivedDataWithRootObject:self]];
-    }
-    @catch (NSException *exception) {
-        NSLog(@"%@", exception);
-    }
-    return obj;
-}
-
-- (id)deepCopyWithArchiver:(Class)archiver unarchiver:(Class)unarchiver {
-    id obj = nil;
-    @try {
-        obj = [unarchiver unarchiveObjectWithData:[archiver archivedDataWithRootObject:self]];
-    }
-    @catch (NSException *exception) {
-        NSLog(@"%@", exception);
-    }
-    return obj;
-}
-
 #pragma mark - runtime
 + (NSArray *)propertyList
 {

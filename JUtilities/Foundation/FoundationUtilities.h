@@ -13,10 +13,10 @@
 #import "NSData+Utilities.h"
 #import "NSDate+Utilities.h"
 #import "NSDictionary+Utilities.h"
-#import "NSFileManagerFunctions.h"
+#import "NSFileManager+Utilities.h"
 #import "NSMutableArray+Utilities.h"
 #import "NSObject+Utilities.h"
 #import "NSString+Utilities.h"
-
+#import "NSNumber+Utilities.h"
 
 #endif /* FoundationUtilities_h */

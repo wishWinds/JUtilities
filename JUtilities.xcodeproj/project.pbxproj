@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		36C297A1BE977CE8C8F9F5C6 /* Pods_JUtilitiesDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 087FB19A41540DCBA839767C /* Pods_JUtilitiesDemo.framework */; };
+		FE7D2CDB22979DA7004C1535 /* NSNumber+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = FE7D2CD922979DA6004C1535 /* NSNumber+Utilities.m */; };
+		FE7D2CDC22979DA7004C1535 /* NSFileManager+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = FE7D2CD722979DA6004C1535 /* NSFileManager+Utilities.m */; };
 		FEB289932285B39200C91F57 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FEB289922285B39200C91F57 /* AppDelegate.m */; };
 		FEB289962285B39200C91F57 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEB289952285B39200C91F57 /* ViewController.m */; };
 		FEB289992285B39200C91F57 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEB289972285B39200C91F57 /* Main.storyboard */; };
@@ -41,6 +43,10 @@
 		087FB19A41540DCBA839767C /* Pods_JUtilitiesDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JUtilitiesDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFBC5A5AA90A7B1A2F13B048 /* Pods-JUtilitiesDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JUtilitiesDemo.debug.xcconfig"; path = "Target Support Files/Pods-JUtilitiesDemo/Pods-JUtilitiesDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		D32EAEF9CF0775B3C9D0A4F6 /* Pods-JUtilitiesDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JUtilitiesDemo.release.xcconfig"; path = "Target Support Files/Pods-JUtilitiesDemo/Pods-JUtilitiesDemo.release.xcconfig"; sourceTree = "<group>"; };
+		FE7D2CD722979DA6004C1535 /* NSFileManager+Utilities.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+Utilities.m"; sourceTree = "<group>"; };
+		FE7D2CD822979DA6004C1535 /* NSNumber+Utilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSNumber+Utilities.h"; sourceTree = "<group>"; };
+		FE7D2CD922979DA6004C1535 /* NSNumber+Utilities.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+Utilities.m"; sourceTree = "<group>"; };
+		FE7D2CDA22979DA6004C1535 /* NSFileManager+Utilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+Utilities.h"; sourceTree = "<group>"; };
 		FEB2897F2285B37F00C91F57 /* libJUtilities.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libJUtilities.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEB2898F2285B39200C91F57 /* JUtilitiesDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JUtilitiesDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEB289912285B39200C91F57 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -64,7 +70,6 @@
 		FEB289B22285B67100C91F57 /* NSArray+Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Utilities.h"; sourceTree = "<group>"; };
 		FEB289B32285B67100C91F57 /* NSData+Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Utilities.m"; sourceTree = "<group>"; };
 		FEB289B52285B67100C91F57 /* NSDate+Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Utilities.h"; sourceTree = "<group>"; };
-		FEB289B62285B67100C91F57 /* NSFileManagerFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSFileManagerFunctions.h; sourceTree = "<group>"; };
 		FEB289B72285B67100C91F57 /* NSMutableArray+Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Utilities.h"; sourceTree = "<group>"; };
 		FEB289B82285B67100C91F57 /* NSDictionary+Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Utilities.h"; sourceTree = "<group>"; };
 		FEB289B92285B67100C91F57 /* NSObject+Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Utilities.h"; sourceTree = "<group>"; };
@@ -189,7 +194,10 @@
 			isa = PBXGroup;
 			children = (
 				FEB289C72285BAFF00C91F57 /* FoundationUtilities.h */,
-				FEB289B62285B67100C91F57 /* NSFileManagerFunctions.h */,
+				FE7D2CDA22979DA6004C1535 /* NSFileManager+Utilities.h */,
+				FE7D2CD722979DA6004C1535 /* NSFileManager+Utilities.m */,
+				FE7D2CD822979DA6004C1535 /* NSNumber+Utilities.h */,
+				FE7D2CD922979DA6004C1535 /* NSNumber+Utilities.m */,
 				FEB289C52285B83E00C91F57 /* NSString+Utilities.h */,
 				FEB289C42285B83E00C91F57 /* NSString+Utilities.m */,
 				FEB289B22285B67100C91F57 /* NSArray+Utilities.h */,
@@ -360,6 +368,8 @@
 				FEB289BB2285B67100C91F57 /* NSMutableArray+Utilities.m in Sources */,
 				FEB289BC2285B67100C91F57 /* NSDate+Utilities.m in Sources */,
 				FEB289BF2285B67100C91F57 /* NSDictionary+Utilities.m in Sources */,
+				FE7D2CDC22979DA7004C1535 /* NSFileManager+Utilities.m in Sources */,
+				FE7D2CDB22979DA7004C1535 /* NSNumber+Utilities.m in Sources */,
 				FEB289CD2285BF6000C91F57 /* UIResponder+Router.m in Sources */,
 				FEB289BE2285B67100C91F57 /* NSObject+Utilities.m in Sources */,
 				FEB289C02285B67100C91F57 /* NSData+Utilities.m in Sources */,

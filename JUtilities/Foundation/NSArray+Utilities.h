@@ -10,7 +10,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface NSArray (UTilities)
-
+#pragma mark - 函数式编程 高阶函数
 - (NSArray *)map:(id (^)(id obj))block;
 - (NSArray *)filter:(BOOL (^)(id obj))block;
 - (id)reduce:(id)initial

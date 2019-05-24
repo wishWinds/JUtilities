@@ -1,13 +1,13 @@
 PODS:
-  - JUtilities (0.0.1):
-    - JUtilities/Foundation (= 0.0.1)
-    - JUtilities/Runtime (= 0.0.1)
-    - JUtilities/UIKit (= 0.0.1)
-  - JUtilities/Foundation (0.0.1)
-  - JUtilities/Runtime (0.0.1)
-  - JUtilities/UIKit (0.0.1):
-    - JUtilities/UIKit/UIResponderRouter (= 0.0.1)
-  - JUtilities/UIKit/UIResponderRouter (0.0.1)
+  - JUtilities (1.1):
+    - JUtilities/Foundation (= 1.1)
+    - JUtilities/Runtime (= 1.1)
+    - JUtilities/UIKit (= 1.1)
+  - JUtilities/Foundation (1.1)
+  - JUtilities/Runtime (1.1)
+  - JUtilities/UIKit (1.1):
+    - JUtilities/UIKit/UIResponderRouter (= 1.1)
+  - JUtilities/UIKit/UIResponderRouter (1.1)
 
 DEPENDENCIES:
   - JUtilities (from `./`)
@@ -17,7 +17,7 @@ EXTERNAL SOURCES:
     :path: "./"
 
 SPEC CHECKSUMS:
-  JUtilities: 243a8dd9bfee0120ccda3b51af4521551fce8fb8
+  JUtilities: 38bdbc6bf61a2b17670f14883a5df99f0c020f34
 
 PODFILE CHECKSUM: 74289aa93f69fd0fb0f809561395915788751e3d
 
