@@ -6,6 +6,8 @@
 //  Copyright © 2019 shupeng. All rights reserved.
 //
 
+#import <objc/runtime.h>
+
 #ifndef AssociatedObject_h
 #define AssociatedObject_h
 
