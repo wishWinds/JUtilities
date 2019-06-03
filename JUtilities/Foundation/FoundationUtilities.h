@@ -18,5 +18,6 @@
 #import "NSObject+Utilities.h"
 #import "NSString+Utilities.h"
 #import "NSNumber+Utilities.h"
+#import "CGUtilities.h"
 
 #endif /* FoundationUtilities_h */

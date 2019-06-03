@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Menu">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="Ef2-67-tc7"/>
+                <outlet property="scrollView" destination="TXx-a2-6ng" id="Ezi-aS-TBT"/>
+                <outlet property="stackView" destination="1uG-2q-8gu" id="J46-b7-nba"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="360" height="166"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TXx-a2-6ng">
+                    <rect key="frame" x="0.0" y="0.0" width="360" height="166"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="320" placeholderIntrinsicHeight="166" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="1uG-2q-8gu">
+                            <rect key="frame" x="10" y="0.0" width="320" height="166"/>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="1uG-2q-8gu" secondAttribute="trailing" constant="10" id="FCN-N5-3e2"/>
+                        <constraint firstItem="1uG-2q-8gu" firstAttribute="leading" secondItem="TXx-a2-6ng" secondAttribute="leading" constant="10" id="aYx-LJ-Z0N"/>
+                        <constraint firstItem="1uG-2q-8gu" firstAttribute="top" secondItem="TXx-a2-6ng" secondAttribute="top" id="eSt-Tu-BGc"/>
+                        <constraint firstAttribute="bottom" secondItem="1uG-2q-8gu" secondAttribute="bottom" id="n4x-OY-yyV"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="1uG-2q-8gu" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" id="9fC-wC-Zxg"/>
+                <constraint firstAttribute="trailing" secondItem="TXx-a2-6ng" secondAttribute="trailing" id="cXW-9a-hRF"/>
+                <constraint firstAttribute="bottom" secondItem="TXx-a2-6ng" secondAttribute="bottom" id="ia0-pt-1fy"/>
+                <constraint firstItem="TXx-a2-6ng" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="oMT-tW-Z4u"/>
+                <constraint firstItem="TXx-a2-6ng" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="yyZ-rh-Yk1"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="118" y="-217"/>
+        </view>
+    </objects>
+</document>

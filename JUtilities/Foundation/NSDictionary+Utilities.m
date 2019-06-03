@@ -165,4 +165,25 @@ return def;
     if ([value isKindOfClass:[NSNumber class]]) return ((NSNumber *) value).description;
     return def;
 }
+
+#pragma mark - 解决nslog打印unicode时, 未进行转换的问题.
+-(NSString *)descriptionWithLocale:(id)locale
+{
+    NSMutableString *msr = [NSMutableString string];
+    [msr appendString:@"{"];
+    [self enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL *stop) {
+        if ([obj isKindOfClass:[NSString class]]) {
+            [msr appendFormat:@"\n\t\"%@\" : \"%@\",",key,obj];
+        } else {
+            [msr appendFormat:@"\n\t\"%@\" : %@,",key,obj];
+        }
+    }];
+    //去掉最后一个逗号（,）
+    if ([msr hasSuffix:@","]) {
+        NSString *str = [msr substringToIndex:msr.length - 1];
+        msr = [NSMutableString stringWithString:str];
+    }
+    [msr appendString:@"\n}"];
+    return msr;
+}
 @end

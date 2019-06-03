@@ -12,4 +12,5 @@
 #import "RuntimeUtilities.h"
 #import "FoundationUtilities.h"
 #import "UIUtilities.h"
+#import "UIViews.h"
 #endif /* JUtilities_h */

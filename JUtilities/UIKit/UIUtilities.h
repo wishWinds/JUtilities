@@ -11,5 +11,6 @@
 
 #import "UIResponder+Router.h"
 #import "UIView+Utilities.h"
-
+#import "UIImage+Utilities.h"
+#import "UIViewController+Utilities.h"
 #endif /* UIUtilities_h */
