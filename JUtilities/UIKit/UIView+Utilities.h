@@ -104,6 +104,9 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic) CGFloat centerY;     ///< Shortcut for center.y
 @property(nonatomic) CGPoint origin;      ///< Shortcut for frame.origin.
 @property(nonatomic) CGSize size;        ///< Shortcut for frame.size.
+
+
+- (void)setRounded:(CGFloat)radius masksToBounds:(BOOL)masks;
 @end
 
 NS_ASSUME_NONNULL_END

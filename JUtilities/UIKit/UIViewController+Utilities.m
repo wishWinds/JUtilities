@@ -82,7 +82,7 @@
     QMUIAlertAction *action2 = [QMUIAlertAction actionWithTitle:confirmBtnTitle? confirmBtnTitle: @"确定" style:QMUIAlertActionStyleDestructive handler:^(__kindof QMUIAlertController * _Nonnull aAlertController, QMUIAlertAction * _Nonnull action) {
         block();
     }];
-    QMUIAlertController *alertController = [QMUIAlertController alertControllerWithTitle:title message:nil preferredStyle:QMUIAlertControllerStyleAlert];
+    QMUIAlertController *alertController = [QMUIAlertController alertControllerWithTitle:title message:subtitle preferredStyle:QMUIAlertControllerStyleAlert];
     [alertController addAction:action1];
     [alertController addAction:action2];
     [alertController showWithAnimated:YES];

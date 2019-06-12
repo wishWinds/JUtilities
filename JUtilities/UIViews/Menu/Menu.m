@@ -76,9 +76,8 @@
 - (void)setInset:(UIEdgeInsets)inset {
     _inset = inset;
     
-    [self.stackView mas_remakeConstraints:^(MASConstraintMaker *make) {
-        make.edges.mas_equalTo(inset);
-    }];
+    self.stackView.layoutMargins = inset;
+    self.stackView.layoutMarginsRelativeArrangement = true;
 }
 
 - (void)setSpacing:(NSInteger)spacing {
@@ -92,7 +91,7 @@
     if (_autoSpacing) {
         // 固定宽度为父容器宽度
         [self.stackView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.width.equalTo(self.contentView.mas_width).mas_offset(self.inset.left + self.inset.right);
+            make.width.equalTo(self.contentView.mas_width);
         }];
         // 重新设置distribution
         self.stackView.distribution = UIStackViewDistributionEqualSpacing;
@@ -139,6 +138,8 @@
         self.menuDidSelectAtIndex(_currentIndex);
     }
     
+    // qmui官方临时解决方案. (内容显示不全)
+    [sender sizeToFit];
     [self.contentView layoutIfNeeded];
 }
 @end

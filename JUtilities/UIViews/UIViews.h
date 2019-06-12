@@ -11,4 +11,5 @@
 #import "VCodeButton.h"
 #import "Menu.h"
 #import "Banner.h"
+#import "UIView+Loading.h"
 #endif /* UIViews_h */

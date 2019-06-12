@@ -260,4 +260,9 @@
     frame.size = size;
     self.frame = frame;
 }
+
+- (void)setRounded:(CGFloat)radius masksToBounds:(BOOL)masks {
+    self.layer.cornerRadius = radius;
+    self.layer.masksToBounds = masks;
+}
 @end

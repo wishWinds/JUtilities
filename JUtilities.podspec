@@ -164,14 +164,18 @@ Pod::Spec.new do |s|
     ss.public_header_files = 'JUtilities/UIViews/*.h'
 
     ss.dependency 'JUtilities/Runtime'
-
+    ss.dependency 'JUtilities/Runtime'
+    ss.dependency 'JUtilities/Foundation'
+    ss.dependency 'Masonry'
+    ss.dependency 'BlocksKit'
+    ss.dependency 'SDWebImage'
+    ss.dependency 'QMUIKit'
+    
     ss.subspec 'Menu' do |sss|
       sss.source_files = 'JUtilities/UIViews/Menu/*.{h,m}'
       sss.public_header_files = 'JUtilities/UIViews/Menu/*.h'
       sss.resources = ['JUtilities/UIViews/Menu/*.xib']
-      
-      sss.dependency 'Masonry'
-      sss.dependency 'QMUIKit'
+
     end
 
 
@@ -179,13 +183,18 @@ Pod::Spec.new do |s|
       sss.source_files = 'JUtilities/UIViews/Banner/*.{h,m}'
       sss.public_header_files = 'JUtilities/UIViews/Banner/*.h'
       sss.resources = ['JUtilities/UIViews/Banner/*.xib']
-      
-      sss.dependency 'JUtilities/Runtime'
-      sss.dependency 'JUtilities/UIKit'
-      sss.dependency 'Masonry'
-      sss.dependency 'BlocksKit'
-      sss.dependency 'SDWebImage'
-      
+    end
+    
+    ss.subspec 'Banner' do |sss|
+      sss.source_files = 'JUtilities/UIViews/Banner/*.{h,m}'
+      sss.public_header_files = 'JUtilities/UIViews/Banner/*.h'
+      sss.resources = ['JUtilities/UIViews/Banner/*.xib']
+
+    end
+
+    ss.subspec 'LoadingView' do |sss|
+      sss.source_files = 'JUtilities/UIViews/LoadingView/*.{h,m}'
+      sss.public_header_files = 'JUtilities/UIViews/LoadingView/*.h'
     end
   end
 end

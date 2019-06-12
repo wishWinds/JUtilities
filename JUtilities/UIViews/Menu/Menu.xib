@@ -24,12 +24,12 @@
                     <rect key="frame" x="0.0" y="0.0" width="360" height="166"/>
                     <subviews>
                         <stackView opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="320" placeholderIntrinsicHeight="166" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="1uG-2q-8gu">
-                            <rect key="frame" x="10" y="0.0" width="320" height="166"/>
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="166"/>
                         </stackView>
                     </subviews>
                     <constraints>
-                        <constraint firstAttribute="trailing" secondItem="1uG-2q-8gu" secondAttribute="trailing" constant="10" id="FCN-N5-3e2"/>
-                        <constraint firstItem="1uG-2q-8gu" firstAttribute="leading" secondItem="TXx-a2-6ng" secondAttribute="leading" constant="10" id="aYx-LJ-Z0N"/>
+                        <constraint firstAttribute="trailing" secondItem="1uG-2q-8gu" secondAttribute="trailing" id="FCN-N5-3e2"/>
+                        <constraint firstItem="1uG-2q-8gu" firstAttribute="leading" secondItem="TXx-a2-6ng" secondAttribute="leading" id="aYx-LJ-Z0N"/>
                         <constraint firstItem="1uG-2q-8gu" firstAttribute="top" secondItem="TXx-a2-6ng" secondAttribute="top" id="eSt-Tu-BGc"/>
                         <constraint firstAttribute="bottom" secondItem="1uG-2q-8gu" secondAttribute="bottom" id="n4x-OY-yyV"/>
                     </constraints>
