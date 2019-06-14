@@ -261,8 +261,19 @@
     self.frame = frame;
 }
 
+<<<<<<< HEAD
 - (void)setRounded:(CGFloat)radius masksToBounds:(BOOL)masks {
     self.layer.cornerRadius = radius;
     self.layer.masksToBounds = masks;
+=======
+- (CGSize)boundsSize {
+    return self.bounds.size;
+}
+
+- (void)setBoundsSize:(CGSize)size {
+    CGRect bounds = self.bounds;
+    bounds.size = size;
+    self.bounds = bounds;
+>>>>>>> 7ed479a... add bounds size for uiview
 }
 @end
