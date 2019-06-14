@@ -104,13 +104,9 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic) CGFloat centerY;     ///< Shortcut for center.y
 @property(nonatomic) CGPoint origin;      ///< Shortcut for frame.origin.
 @property(nonatomic) CGSize size;        ///< Shortcut for frame.size.
-<<<<<<< HEAD
-
+@property(nonatomic) CGSize boundsSize;        ///< Shortcut for bounds.size.
 
 - (void)setRounded:(CGFloat)radius masksToBounds:(BOOL)masks;
-=======
-@property(nonatomic) CGSize boundsSize;        ///< Shortcut for bounds.size.
->>>>>>> 7ed479a... add bounds size for uiview
 @end
 
 NS_ASSUME_NONNULL_END
