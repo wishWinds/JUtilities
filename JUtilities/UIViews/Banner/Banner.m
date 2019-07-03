@@ -130,6 +130,9 @@
 
 - (void)createAutoScrollTimerIfNeeded {
     if (self.autoscrollInterval != 0) {
+        [self.timer invalidate];
+        self.timer = nil;
+        
         @weakify(self)
         self.timer = [NSTimer bk_scheduledTimerWithTimeInterval:self.autoscrollInterval block:^(NSTimer *timer) {
             @strongify(self)

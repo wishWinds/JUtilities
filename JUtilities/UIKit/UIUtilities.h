@@ -13,4 +13,6 @@
 #import "UIView+Utilities.h"
 #import "UIImage+Utilities.h"
 #import "UIViewController+Utilities.h"
+#import "UILabel+Utilities.h"
+#import "UIStackView+Utilities.h"
 #endif /* UIUtilities_h */

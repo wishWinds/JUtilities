@@ -24,21 +24,42 @@ PODS:
   - JUtilities/UIKit (1.1):
     - JUtilities/UIKit/UIResponderRouter (= 1.1)
     - Masonry
+    - QMUIKit
   - JUtilities/UIKit/UIResponderRouter (1.1):
     - Masonry
+    - QMUIKit
   - JUtilities/UIViews (1.1):
+    - BlocksKit
+    - JUtilities/Foundation
     - JUtilities/Runtime
     - JUtilities/UIViews/Banner (= 1.1)
+    - JUtilities/UIViews/Banner (= 1.1)
+    - JUtilities/UIViews/LoadingView (= 1.1)
     - JUtilities/UIViews/Menu (= 1.1)
+    - Masonry
+    - QMUIKit
+    - SDWebImage
   - JUtilities/UIViews/Banner (1.1):
     - BlocksKit
-    - JUtilities/Runtime
-    - JUtilities/UIKit
-    - Masonry
-  - JUtilities/UIViews/Menu (1.1):
+    - JUtilities/Foundation
     - JUtilities/Runtime
     - Masonry
     - QMUIKit
+    - SDWebImage
+  - JUtilities/UIViews/LoadingView (1.1):
+    - BlocksKit
+    - JUtilities/Foundation
+    - JUtilities/Runtime
+    - Masonry
+    - QMUIKit
+    - SDWebImage
+  - JUtilities/UIViews/Menu (1.1):
+    - BlocksKit
+    - JUtilities/Foundation
+    - JUtilities/Runtime
+    - Masonry
+    - QMUIKit
+    - SDWebImage
   - Masonry (1.1.0)
   - QMUIKit (3.2.0):
     - QMUIKit/QMUIComponents (= 3.2.0)
@@ -306,6 +327,9 @@ PODS:
     - QMUIKit/QMUILog
   - QMUIKit/QMUIResources (3.2.0)
   - QMUIKit/QMUIWeakObjectContainer (3.2.0)
+  - SDWebImage (5.0.4):
+    - SDWebImage/Core (= 5.0.4)
+  - SDWebImage/Core (5.0.4)
 
 DEPENDENCIES:
   - JUtilities (from `./`)
@@ -315,6 +339,7 @@ SPEC REPOS:
     - BlocksKit
     - Masonry
     - QMUIKit
+    - SDWebImage
 
 EXTERNAL SOURCES:
   JUtilities:
@@ -322,9 +347,10 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   BlocksKit: 7f422b971407001178d181a43b99014ea2591fe6
-  JUtilities: 18159653488a348c02e1f70a55f75877ed39305a
+  JUtilities: f7fd62784982879ed6d259e1bdef4657bf7d0348
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   QMUIKit: cd0757484a3a1bd3349a558a991c3df046a48c36
+  SDWebImage: c739016e4bdf0a4a1f9a04b5e0385395ad63a282
 
 PODFILE CHECKSUM: 74289aa93f69fd0fb0f809561395915788751e3d
 

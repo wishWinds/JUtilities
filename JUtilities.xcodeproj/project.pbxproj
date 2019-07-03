@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		36C297A1BE977CE8C8F9F5C6 /* Pods_JUtilitiesDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 087FB19A41540DCBA839767C /* Pods_JUtilitiesDemo.framework */; };
+		FE3B445822BA17B2004A2BC9 /* JMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE3B445722BA17B2004A2BC9 /* JMenu.xib */; };
+		FE3B445B22BA17C0004A2BC9 /* JMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = FE3B445A22BA17C0004A2BC9 /* JMenu.m */; };
+		FE3B445F22BA2553004A2BC9 /* JMenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FE3B445D22BA2553004A2BC9 /* JMenuCell.m */; };
+		FE3B446022BA2553004A2BC9 /* JMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE3B445E22BA2553004A2BC9 /* JMenuCell.xib */; };
 		FE7D2CDB22979DA7004C1535 /* NSNumber+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = FE7D2CD922979DA6004C1535 /* NSNumber+Utilities.m */; };
 		FE7D2CDC22979DA7004C1535 /* NSFileManager+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = FE7D2CD722979DA6004C1535 /* NSFileManager+Utilities.m */; };
 		FEB289932285B39200C91F57 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FEB289922285B39200C91F57 /* AppDelegate.m */; };
@@ -43,6 +47,12 @@
 		087FB19A41540DCBA839767C /* Pods_JUtilitiesDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JUtilitiesDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFBC5A5AA90A7B1A2F13B048 /* Pods-JUtilitiesDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JUtilitiesDemo.debug.xcconfig"; path = "Target Support Files/Pods-JUtilitiesDemo/Pods-JUtilitiesDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		D32EAEF9CF0775B3C9D0A4F6 /* Pods-JUtilitiesDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JUtilitiesDemo.release.xcconfig"; path = "Target Support Files/Pods-JUtilitiesDemo/Pods-JUtilitiesDemo.release.xcconfig"; sourceTree = "<group>"; };
+		FE3B445722BA17B2004A2BC9 /* JMenu.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JMenu.xib; sourceTree = "<group>"; };
+		FE3B445922BA17C0004A2BC9 /* JMenu.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JMenu.h; sourceTree = "<group>"; };
+		FE3B445A22BA17C0004A2BC9 /* JMenu.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JMenu.m; sourceTree = "<group>"; };
+		FE3B445C22BA2553004A2BC9 /* JMenuCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JMenuCell.h; sourceTree = "<group>"; };
+		FE3B445D22BA2553004A2BC9 /* JMenuCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JMenuCell.m; sourceTree = "<group>"; };
+		FE3B445E22BA2553004A2BC9 /* JMenuCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JMenuCell.xib; sourceTree = "<group>"; };
 		FE7D2CD722979DA6004C1535 /* NSFileManager+Utilities.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+Utilities.m"; sourceTree = "<group>"; };
 		FE7D2CD822979DA6004C1535 /* NSNumber+Utilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSNumber+Utilities.h"; sourceTree = "<group>"; };
 		FE7D2CD922979DA6004C1535 /* NSNumber+Utilities.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+Utilities.m"; sourceTree = "<group>"; };
@@ -121,6 +131,20 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		FE3B445622BA17A9004A2BC9 /* JMenu */ = {
+			isa = PBXGroup;
+			children = (
+				FE3B445722BA17B2004A2BC9 /* JMenu.xib */,
+				FE3B445922BA17C0004A2BC9 /* JMenu.h */,
+				FE3B445A22BA17C0004A2BC9 /* JMenu.m */,
+				FE3B445C22BA2553004A2BC9 /* JMenuCell.h */,
+				FE3B445D22BA2553004A2BC9 /* JMenuCell.m */,
+				FE3B445E22BA2553004A2BC9 /* JMenuCell.xib */,
+			);
+			name = JMenu;
+			path = JUtilities/UIViews/JMenu;
+			sourceTree = SOURCE_ROOT;
+		};
 		FEB289762285B37F00C91F57 = {
 			isa = PBXGroup;
 			children = (
@@ -155,6 +179,7 @@
 		FEB289902285B39200C91F57 /* JUtilitiesDemo */ = {
 			isa = PBXGroup;
 			children = (
+				FE3B445622BA17A9004A2BC9 /* JMenu */,
 				FEB289912285B39200C91F57 /* AppDelegate.h */,
 				FEB289922285B39200C91F57 /* AppDelegate.m */,
 				FEB289942285B39200C91F57 /* ViewController.h */,
@@ -306,8 +331,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				FEB2899E2285B39200C91F57 /* LaunchScreen.storyboard in Resources */,
+				FE3B445822BA17B2004A2BC9 /* JMenu.xib in Resources */,
 				FEB2899B2285B39200C91F57 /* Assets.xcassets in Resources */,
 				FEB289992285B39200C91F57 /* Main.storyboard in Resources */,
+				FE3B446022BA2553004A2BC9 /* JMenuCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,6 +354,7 @@
 				"${BUILT_PRODUCTS_DIR}/JUtilities/JUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
 				"${BUILT_PRODUCTS_DIR}/QMUIKit/QMUIKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
@@ -336,6 +364,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/QMUIKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -390,7 +419,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				FEB289962285B39200C91F57 /* ViewController.m in Sources */,
+				FE3B445B22BA17C0004A2BC9 /* JMenu.m in Sources */,
 				FEB289A12285B39200C91F57 /* main.m in Sources */,
+				FE3B445F22BA2553004A2BC9 /* JMenuCell.m in Sources */,
 				FEB289932285B39200C91F57 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
