@@ -106,21 +106,23 @@
         obj.titleLabel.font = [UIFont systemFontOfSize:14];
     }];
     
+    UIButton *selectBtn;
     if (currentIndex <= 0) {
         _currentIndex = 0;
         
-        [(UIButton *)self.stackView.subviews.firstObject setSelected:true];
-        [[(UIButton *)self.stackView.subviews.firstObject titleLabel] setFont:[UIFont fontWithName:@"Medium" size:16]];
+        selectBtn = self.stackView.arrangedSubviews.firstObject;
     } else if (currentIndex >= self.stackView.subviews.count - 1) {
         _currentIndex = self.stackView.subviews.count - 1;
-        [(UIButton *)self.stackView.subviews.lastObject setSelected:true];
-        [[(UIButton *)self.stackView.subviews.lastObject titleLabel] setFont:[UIFont fontWithName:@"Medium" size:16]];
+        selectBtn = self.stackView.arrangedSubviews.lastObject;
     } else {
         _currentIndex = currentIndex;
-        [(UIButton *)self.stackView.subviews[currentIndex] setSelected:true];
-        [[(UIButton *)self.stackView.subviews[currentIndex] titleLabel] setFont:[UIFont fontWithName:@"Medium" size:16]];
+        selectBtn = self.stackView.arrangedSubviews[currentIndex];
     }
     
+    [selectBtn setSelected:true];
+    [selectBtn setFont:[UIFont fontWithName:@"Medium" size:16]];
+    
+    [self.scrollView scrollRectToVisible:selectBtn.frame animated:true];
     [self layoutIfNeeded];
 }
 
