@@ -179,16 +179,16 @@ Pod::Spec.new do |s|
     end
 
 
-    ss.subspec 'Banner' do |sss|
-      sss.source_files = 'JUtilities/UIViews/Banner/*.{h,m}'
-      sss.public_header_files = 'JUtilities/UIViews/Banner/*.h'
-      sss.resources = ['JUtilities/UIViews/Banner/*.xib']
-    end
+    # ss.subspec 'Banner' do |sss|
+    #   sss.source_files = 'JUtilities/UIViews/Banner/*.{h,m}'
+    #   sss.public_header_files = 'JUtilities/UIViews/Banner/*.h'
+    #   sss.resources = ['JUtilities/UIViews/Banner/*.xib']
+    # end
     
     ss.subspec 'Banner' do |sss|
-      sss.source_files = 'JUtilities/UIViews/Banner/*.{h,m}'
-      sss.public_header_files = 'JUtilities/UIViews/Banner/*.h'
-      sss.resources = ['JUtilities/UIViews/Banner/*.xib']
+      sss.source_files = 'JUtilities/UIViews/Banner/**/*.{h,m}'
+      sss.public_header_files = 'JUtilities/UIViews/Banner/**/*.h'
+      sss.resources = ['JUtilities/UIViews/Banner/**/*.xib']
 
     end
 
