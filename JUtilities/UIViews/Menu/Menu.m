@@ -127,8 +127,12 @@
 }
 
 - (void)btnPressed:(UIButton *)sender {
-    _currentIndex = [self.stackView.subviews indexOfObject:sender];
+    NSInteger index = [self.stackView.subviews indexOfObject:sender];
+    if (index == _currentIndex) {
+        return;
+    }
     
+    _currentIndex = index;
     [self.stackView.arrangedSubviews enumerateObjectsUsingBlock:^(__kindof UIButton * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         [obj setSelected:false];
         obj.titleLabel.font = [UIFont systemFontOfSize:14];
@@ -142,6 +146,6 @@
     
     // qmui官方临时解决方案. (内容显示不全)
     [sender sizeToFit];
-    [self.contentView layoutIfNeeded];
+    [self layoutIfNeeded];
 }
 @end
